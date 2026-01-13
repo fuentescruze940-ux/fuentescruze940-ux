@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Fuentes - Desarrollador Web & Ingeniero en Sistemas</title>
+  <meta name="description" content="Portfolio y blog personal de Eduardo Fuentes, Desarrollador Web e Ingeniero en Sistemas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" data-page="inicio">
+        <span class="logo-icon">EF</span>
+        <span class="logo-text">Eduardo Fuentes</span>
+      </a>
+      
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#" class="nav-link active" data-page="inicio">Inicio</a></li>
+        <li><a href="#" class="nav-link" data-page="sobre-mi">Sobre Mí</a></li>
+        <li><a href="#" class="nav-link" data-page="habilidades">Habilidades</a></li>
+        <li><a href="#" class="nav-link" data-page="proyectos">Proyectos</a></li>
+        <li><a href="#" class="nav-link" data-page="contacto">Contacto</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Page: Inicio -->
+    <section class="page active" id="page-inicio">
+      <div class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <span class="hero-greeting">Hola, soy</span>
+            <h1 class="hero-title">Eduardo Fuentes</h1>
+            <p class="hero-subtitle">Desarrollador Web & Ingeniero en Sistemas</p>
+            <p class="hero-description">
+              Estudiante de Ingeniería en Sistemas Computacionales apasionado por crear soluciones tecnológicas innovadoras y eficientes.
+            </p>
+            <div class="hero-buttons">
+              <a href="#" class="btn btn-primary" data-page="proyectos">Ver Proyectos</a>
+              <a href="#" class="btn btn-secondary" data-page="contacto">Contactar</a>
+            </div>
+            <div class="hero-social">
+              <a href="https://github.com/fuentescruze940-ux" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <a href="https://linkedin.com/in/eduardo-fuentes" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a href="mailto:eduardo@ejemplo.com" class="social-link" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <!-- Reemplaza esta imagen con tu foto -->
+              <img src="images/profile.jpg" alt="Eduardo Fuentes" class="profile-photo">
+              <div class="image-decoration"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-background">
+          <div class="gradient-orb orb-1"></div>
+          <div class="gradient-orb orb-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page: Sobre Mí -->
+    <section class="page" id="page-sobre-mi">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">Sobre Mí</h1>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="about-image-container">
+              <img src="images/about.jpg" alt="Eduardo Fuentes trabajando" class="about-photo">
+              <div class="about-decoration"></div>
+            </div>
+          </div>
+          <div class="about-text">
+            <p class="about-intro">
+              Soy estudiante de <strong>Ingeniería en Sistemas Computacionales</strong>, actualmente cursando el séptimo semestre.
+            </p>
+            <p>
+              Me caracterizo por aplicar de manera práctica todos los conocimientos adquiridos durante mi formación, desarrollando soluciones eficientes y seguras en entornos reales.
+            </p>
+            <p>
+              Tengo experiencia trabajando con entornos <strong>Windows y Linux (Debian)</strong>, así como en el diseño y simulación de redes mediante <strong>Cisco Packet Tracer</strong>.
+            </p>
+            <p>
+              Además, poseo conocimientos en <strong>programación web</strong> y bases fundamentales en <strong>Python</strong>, lo que complementa mi perfil técnico y me permite abordar problemas desde un punto de vista integral.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number">7°</span>
+                <span class="stat-label">Semestre</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Proyectos</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Tecnologías</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page: Habilidades -->
+    <section class="page" id="page-habilidades">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">Skills</h1>
+          <div class="title-underline"></div>
+        </div>
+        <div class="skills-grid">
+          <!-- Desarrollo Web -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="skill-title">Desarrollo WEB</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">TailwindCSS</span>
+              <span class="skill-tag">Astro</span>
+            </div>
+          </div>
+
+          <!-- Programación -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                <rect x="9" y="9" width="6" height="6"></rect>
+                <line x1="9" y1="1" x2="9" y2="4"></line>
+                <line x1="15" y1="1" x2="15" y2="4"></line>
+                <line x1="9" y1="20" x2="9" y2="23"></line>
+                <line x1="15" y1="20" x2="15" y2="23"></line>
+                <line x1="20" y1="9" x2="23" y2="9"></line>
+                <line x1="20" y1="14" x2="23" y2="14"></line>
+                <line x1="1" y1="9" x2="4" y2="9"></line>
+                <line x1="1" y1="14" x2="4" y2="14"></line>
+              </svg>
+            </div>
+            <h3 class="skill-title">Programación</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Godot</span>
+              <span class="skill-tag">Bash</span>
+            </div>
+          </div>
+
+          <!-- DevOps & Herramientas -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+              </svg>
+            </div>
+            <h3 class="skill-title">DevOps & Herramientas</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Nginx</span>
+            </div>
+          </div>
+
+          <!-- Sistemas Operativos -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="skill-title">Sistemas Operativos</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Linux</span>
+              <span class="skill-tag">Debian</span>
+              <span class="skill-tag">Windows</span>
+              <span class="skill-tag">Fedora</span>
+            </div>
+          </div>
+
+          <!-- Networking -->
+          <div class="skill-card skill-card-wide">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                <line x1="12" y1="12" x2="12" y2="8"></line>
+              </svg>
+            </div>
+            <h3 class="skill-title">Networking</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Diseño y configuración de redes</span>
+              <span class="skill-tag">VLANs</span>
+              <span class="skill-tag">Cisco Packet Tracer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page: Proyectos -->
+    <section class="page" id="page-proyectos">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">Proyectos</h1>
+          <div class="title-underline"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Proyecto 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/proyecto-consultoria.jpg" alt="Sistema de Consultoría en Construcción">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistema de Consultoría en Construcción</h3>
+              <p class="project-description">Sistema completo con módulos de contratos, clientes, mantenimiento, servicios y terrenos para gestión de proyectos de construcción.</p>
+              <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/proyecto-egresados.jpg" alt="Sistema de seguimiento de egresados">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistema de seguimiento de egresados</h3>
+              <p class="project-description">Plataforma para la Universidad Mexiquense del Bicentenario para el seguimiento y gestión de información de egresados.</p>
+              <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+
+          <!-- Proyecto 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="images/proyecto-traslaciones.jpg" alt="Traslaciones de figuras">
+              <div class="project-overlay">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Traslaciones de figuras</h3>
+              <p class="project-description">Aplicación matemática para visualizar y calcular traslaciones de figuras geométricas en un plano cartesiano.</p>
+              <a href="#" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                Código
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page: Contacto -->
+    <section class="page" id="page-contacto">
+      <div class="container">
+        <div class="page-header">
+          <h1 class="page-title">Contacto</h1>
+          <div class="title-underline"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>¿Tienes un proyecto en mente?</h2>
+            <p>Estoy disponible para proyectos freelance, colaboraciones o simplemente para charlar sobre tecnología. No dudes en contactarme.</p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>eduardo@ejemplo.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Ubicación</h4>
+                  <p>México</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>GitHub</h4>
+                  <p>@fuentescruze940-ux</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="tu@email.com">
+            </div>
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject" required placeholder="¿De qué quieres hablar?">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tu mensaje..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Eduardo Fuentes. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <svg class="toast-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span id="toastMessage">Mensaje enviado correctamente</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
