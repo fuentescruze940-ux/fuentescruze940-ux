@@ -1,39 +1,18 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono, Inter } from "next/font/google"
+import { Inter, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Navigation } from "@/components/navigation"
 import "./globals.css"
+import Sidebar from "@/components/sidebar"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
-const _inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" })
 
 export const metadata: Metadata = {
-  title: "Eduardo Fuentes | Desarrollador Web & Ingeniero en Sistemas",
+  title: "Juan Eduardo Fuentes Cruz - Desarrollador Full Stack",
   description:
-    "Portfolio personal de Eduardo Fuentes - Estudiante de Ingeniería en Sistemas Computacionales, desarrollador web y especialista en administración de sistemas.",
+    "Portfolio y blog personal de Juan Eduardo Fuentes Cruz. Desarrollador Full Stack especializado en React, Next.js y tecnologías web modernas.",
   generator: "v0.app",
-  keywords: ["desarrollador web", "ingeniero en sistemas", "portfolio", "Eduardo Fuentes", "programador"],
-  authors: [{ name: "Eduardo Fuentes" }],
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
 }
 
 export default function RootLayout({
@@ -43,11 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className={`font-sans antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Navigation />
-          <main className="min-h-screen">{children}</main>
-        </ThemeProvider>
+      <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
+        <div className="flex min-h-screen">
+          <Sidebar />
+          <main className="flex-1 lg:ml-64">{children}</main>
+        </div>
         <Analytics />
       </body>
     </html>
