@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Calendar, Clock, ArrowRight } from "lucide-react"
+import { Calendar, Clock, ArrowRight, TrendingUp } from "lucide-react"
 
 export default function Blog() {
   const posts = [
@@ -12,6 +12,7 @@ export default function Blog() {
       readTime: "8 min",
       category: "DevOps",
       slug: "microservicios-docker-kubernetes",
+      featured: true,
     },
     {
       id: 2,
@@ -22,6 +23,7 @@ export default function Blog() {
       readTime: "6 min",
       category: "Frontend",
       slug: "optimizacion-react",
+      featured: true,
     },
     {
       id: 3,
@@ -32,6 +34,7 @@ export default function Blog() {
       readTime: "10 min",
       category: "Networking",
       slug: "diseno-redes-empresariales",
+      featured: false,
     },
     {
       id: 4,
@@ -42,6 +45,7 @@ export default function Blog() {
       readTime: "7 min",
       category: "Web Development",
       slug: "nextjs-16-novedades",
+      featured: false,
     },
     {
       id: 5,
@@ -52,48 +56,71 @@ export default function Blog() {
       readTime: "12 min",
       category: "Security",
       slug: "seguridad-aplicaciones-web",
+      featured: false,
     },
   ]
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-6">
-      <h1 className="section-title">Blog</h1>
+    <div className="max-w-5xl mx-auto py-16 px-6">
+      <div className="animate-fade-in">
+        <h1 className="section-title">Blog</h1>
+        <p className="text-lg text-muted-foreground mb-12 max-w-2xl">
+          Comparto mis experiencias, aprendizajes y conocimientos sobre desarrollo web, ingeniería de software y
+          tecnología moderna.
+        </p>
+      </div>
 
-      <p className="text-lg text-muted-foreground mb-12">
-        Comparto mis experiencias, aprendizajes y conocimientos sobre desarrollo web, ingeniería de software y
-        tecnología.
-      </p>
+      <div className="space-y-6">
+        {posts.map((post, index) => (
+          <article
+            key={post.id}
+            className="card-modern group relative overflow-hidden"
+            style={{ animationDelay: `${index * 100}ms` }}
+          >
+            {post.featured && (
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            )}
 
-      <div className="space-y-8">
-        {posts.map((post) => (
-          <article key={post.id} className="card-modern group hover:border-primary/50">
-            <div className="flex items-start justify-between mb-3">
-              <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">
-                {post.category}
-              </span>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <span className="flex items-center gap-1">
-                  <Calendar className="w-4 h-4" />
-                  {post.date}
-                </span>
-                <span className="flex items-center gap-1">
-                  <Clock className="w-4 h-4" />
-                  {post.readTime}
-                </span>
+            <div className="relative">
+              <div className="flex items-center justify-between mb-4 flex-wrap gap-3">
+                <div className="flex items-center gap-3">
+                  <span className="px-3 py-1.5 bg-primary/10 text-primary rounded-lg text-xs font-semibold border border-primary/20">
+                    {post.category}
+                  </span>
+                  {post.featured && (
+                    <span className="flex items-center gap-1 px-3 py-1.5 bg-accent border border-border rounded-lg text-xs font-semibold">
+                      <TrendingUp className="w-3 h-3" />
+                      Popular
+                    </span>
+                  )}
+                </div>
+
+                <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                  <span className="flex items-center gap-1.5">
+                    <Calendar className="w-4 h-4" />
+                    {post.date}
+                  </span>
+                  <span className="flex items-center gap-1.5">
+                    <Clock className="w-4 h-4" />
+                    {post.readTime}
+                  </span>
+                </div>
               </div>
+
+              <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors leading-snug">
+                {post.title}
+              </h2>
+
+              <p className="text-muted-foreground mb-5 leading-relaxed">{post.excerpt}</p>
+
+              <Link
+                href={`/blog/${post.slug}`}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-lg font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:gap-3 hover:shadow-lg hover:shadow-primary/20"
+              >
+                Leer artículo completo
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
-
-            <h2 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{post.title}</h2>
-
-            <p className="text-muted-foreground mb-4 leading-relaxed">{post.excerpt}</p>
-
-            <Link
-              href={`/blog/${post.slug}`}
-              className="inline-flex items-center gap-2 text-primary hover:gap-3 transition-all"
-            >
-              Leer más
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </article>
         ))}
       </div>

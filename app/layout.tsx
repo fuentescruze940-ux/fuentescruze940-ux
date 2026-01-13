@@ -9,9 +9,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" })
 
 export const metadata: Metadata = {
-  title: "Juan Eduardo Fuentes Cruz - Desarrollador Full Stack",
+  title: "Eduardo Fuentes Cruz - Desarrollador En programacion Web",
   description:
-    "Portfolio y blog personal de Juan Eduardo Fuentes Cruz. Desarrollador Full Stack especializado en React, Next.js y tecnologías web modernas.",
+    "Portfolio y blog personal de Eduardo Fuentes Cruz. Desarrollador web, especializado en React, Next.js y tecnologías web modernas.",
   generator: "v0.app",
 }
 
