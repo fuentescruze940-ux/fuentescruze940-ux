@@ -15,7 +15,7 @@ export default function SobreMi() {
               <div className="relative w-full h-full rounded-2xl overflow-hidden bg-muted">
                 <Image
                   src="/professional-developer-portrait.png"
-                  alt=" Eduardo Fuentes Cruz"
+                  alt="Juan Eduardo Fuentes Cruz"
                   fill
                   className="object-cover"
                 />

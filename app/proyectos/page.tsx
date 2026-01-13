@@ -8,7 +8,7 @@ export default function Proyectos() {
       title: "Sistema de Consultoría en Construcción",
       description:
         "Plataforma web completa para gestión de proyectos de construcción con seguimiento en tiempo real, control de presupuestos y generación de reportes automatizados. Sistema integral con módulos de planificación, gestión de recursos y análisis predictivo.",
-      image: "construction+management+system+dashboard+blue+interface",
+      image: "/proyecto-construccion.png",
       tags: ["React", "Node.js", "PostgreSQL", "TailwindCSS", "Docker"],
       demoUrl: "#",
       githubUrl: "#",
@@ -18,7 +18,7 @@ export default function Proyectos() {
       title: "Sistema de Seguimiento de Egresados",
       description:
         "Aplicación para universidades que permite rastrear la trayectoria profesional de egresados universitarios, con análisis de datos, métricas de inserción laboral y panel administrativo completo para gestión de registros académicos.",
-      image: "graduate+tracking+system+data+table+interface",
+      image: "/proyecto-egresados.png",
       tags: ["Next.js", "MongoDB", "Chart.js", "TypeScript", "Express"],
       demoUrl: "#",
       githubUrl: "#",
@@ -28,7 +28,7 @@ export default function Proyectos() {
       title: "Traslaciones de Figuras Geométricas",
       description:
         "Herramienta interactiva educativa para visualizar transformaciones y traslaciones de figuras geométricas en planos cartesianos. Incluye cálculos matemáticos precisos, visualización en tiempo real y múltiples tipos de transformaciones.",
-      image: "geometric+transformation+graph+coordinate+system",
+      image: "/proyecto-traslaciones.png",
       tags: ["JavaScript", "Canvas API", "D3.js", "HTML5"],
       demoUrl: "#",
       githubUrl: "#",
@@ -58,7 +58,7 @@ export default function Proyectos() {
             <div className="relative w-full h-56 rounded-xl overflow-hidden mb-5 bg-gradient-to-br from-muted to-muted/50">
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10" />
               <Image
-                src={`/.jpg?height=400&width=600&query=${project.image}`}
+                src={project.image || "/placeholder.svg"}
                 alt={project.title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
