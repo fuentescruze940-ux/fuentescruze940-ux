@@ -9,26 +9,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-jetbrains" })
 
 export const metadata: Metadata = {
-  title: "Juan Eduardo Fuentes Cruz - Blog Personal",
-  description: "Blog personal de Juan Eduardo Fuentes Cruz. Desarrollador, escritor y creador de contenido.",
+  title: "Juan Eduardo Fuentes Cruz - Desarrollador Full Stack",
+  description:
+    "Portfolio y blog personal de Juan Eduardo Fuentes Cruz. Desarrollador Full Stack especializado en React, Next.js y tecnologías web modernas.",
   generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
 }
 
 export default function RootLayout({
@@ -37,11 +21,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" suppressHydrationWarning>
       <body className={`${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
-        <div className="container-blog">
+        <div className="flex min-h-screen">
           <Sidebar />
-          <main className="main-content">{children}</main>
+          <main className="flex-1 lg:ml-64">{children}</main>
         </div>
         <Analytics />
       </body>
